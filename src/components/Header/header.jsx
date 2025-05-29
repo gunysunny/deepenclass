@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './header.css'; // 스타일 분리
-import cartImg from '../images/top_right_menu2.png';
-import logoImg from '../images/Logo.png';
-import heartImg from '../images/top_right_menu1.png';
-import userImg from '../images/top_right_menu3.png';// 탑 오른쪽 이미지 추가
-import searchIcon from '../images/search.png';
+import './header.css'; // 같은 폴더니까 유지
+
+// 이미지 경로는 상위로 올라가서 images 폴더로 접근해야 함
+import cartImg from '../../images/top_right_menu2.png';
+import logoImg from '../../images/Logo.png';
+import heartImg from '../../images/top_right_menu1.png';
+import userImg from '../../images/top_right_menu3.png';
+import searchIcon from '../../images/search.png';
 
 const Header = () => {
     return (

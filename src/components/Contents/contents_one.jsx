@@ -1,13 +1,10 @@
-import React from 'react';
-import ShowNowbk from './shownow_Btnbk';
-import './contents_one.css'; // 스타일 분리
+import ShowNowbk from '../Assets/shownow_Btnbk.jsx';
+import './contents_one.css';
 
-// 이미지 임포트트
-import playStationImage from '../images/PlayStation.png';
-import airPods from '../images/hero__gnfk5g59t0qe_xlarge_2x 1.png';
-import visionPro from '../images/image 36.png';
-import macbookAir from '../images/MacBook Pro 14.png';
-
+import playStationImage from '../../images/PlayStation.png';
+import airPods from '../../images/hero__gnfk5g59t0qe_xlarge_2x 1.png';
+import visionPro from '../../images/image 36.png';
+import macbookAir from '../../images/MacBook Pro 14.png';
 const Contents = () => {
     return (
         <middle>

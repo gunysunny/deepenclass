@@ -1,7 +1,8 @@
 import React from 'react';
-import './top_banner.css'; // 스타일 분리
-import bannerImage from '../images/Iphone Image.png';
-import ShowNow from './shownow_Btn';
+import './top_banner.css'; // 동일 폴더라 유지
+
+import bannerImage from '../../images/Iphone Image.png';
+import ShowNow from '../Assets/shownow_Btn.jsx';
 
 const Banner = () => {
     return (
