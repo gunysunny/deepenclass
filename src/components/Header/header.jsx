@@ -2,57 +2,61 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.css'
 
-const Header = () => {
-  // 배포 시 서브디렉터리에 올라가더라도 PUBLIC_URL이 자동으로 맞춰집니다
-    const PUBLIC_URL = process.env.PUBLIC_URL
 
+
+const ICONS = [
+    { name: 'cart', file: 'top_right_menu2.png' },
+    { name: 'heart', file: 'top_right_menu1.png' },
+    { name: 'user', file: 'top_right_menu3.png' },
+]
+
+
+// 이미지 경로를 합쳐 주는 용도
+const baseImg = process.env.PUBLIC_URL + '/images'
+
+
+export default function Header(){
     return (
         <header className="flex max-w-[1440px] justify-between items-center px-8 py-4 mx-auto">
-        {/* 로고 */}
-        <div className="cursor-pointer w-[120px] flex-shrink-0">
-            <Link to="/" onClick={() => console.log('로고 클릭됨')}>
-            <img
-                src={`${PUBLIC_URL}/images/Logo.png`}
-                alt="logo"
-                className="w-auto h-10"
-            />
-            </Link>
-        </div>
+        {/* 1) 로고 영역을 작은 컴포넌트로 분리 */}
+        <LogoLink />
 
-        {/* 검색창 */}
-        <div className="flex-[2] flex items-center bg-[#ececec] rounded px-4 py-2 max-w-[300px] w-full mx-5">
-            <img
-            src={`${PUBLIC_URL}/images/search.png`}
-            alt="search"
-            className="w-[18px] h-[18px] mr-2"
-            />
-            <input
-            type="text"
-            placeholder="Search..."
-            className="flex-1 bg-transparent border-none outline-none text-sm"
-            />
-        </div>
+        {/* 2) 검색창 */}
+        <SearchBar baseImg={baseImg} />
 
-        {/* 아이콘들 */}
+        {/* 3) 아이콘들: 배열 + map 으로 간단하게 */}
         <div className="w-[120px] flex gap-5 items-center">
-            <img
-            src={`${PUBLIC_URL}/images/top_right_menu2.png`}
-            alt="cart"
-            className="w-6 h-6 cursor-pointer"
-            />
-            <img
-            src={`${PUBLIC_URL}/images/top_right_menu1.png`}
-            alt="heart"
-            className="w-6 h-6 cursor-pointer"
-            />
-            <img
-            src={`${PUBLIC_URL}/images/top_right_menu3.png`}
-            alt="user"
-            className="w-6 h-6 cursor-pointer"
-            />
+            {ICONS.map(({ name, file }) => (
+            <img key={name} src={`${baseImg}/${file}`} alt={name} className="w-6 h-6 cursor-pointer" />
+            ))}
         </div>
-        </header>
+    </header>
     )
 }
 
-export default Header
+
+
+
+
+// LogoLink 컴포넌트
+function LogoLink() {
+    const baseImg = process.env.PUBLIC_URL + '/images'
+    return (
+        <div className='cursor-pointer w-[120px] flex-shrink-0'>
+            <Link to="/" onClick={() => console.log("로고 클릭")}>
+                <img src={`${baseImg}/Logo.png`} alt="logo" className='w-auto h-10' />
+            </Link>
+        </div>
+    )
+}
+
+
+// SearchBar 컴포넌트
+function SearchBar({ baseImg }) {
+    return (
+        <div className="flex-[2] flex items-center bg-[#ececec] rounded px-4 py-2 max-w-[300px] w-full mx-5">
+            <img src={`${baseImg}/search.png`} alt="search" className="w-[18px] h-[18px] mr-2" />
+            <input type="text" placeholder="Search..." className="flex-1 bg-transparent border-none outline-none text-sm" />
+        </div>
+    )
+}
