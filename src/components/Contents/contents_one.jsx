@@ -32,7 +32,7 @@ const Contents = () => {
                             </div>
                             <div className='airpods_text'>
                                 <p className='airpods_name'>Apple <br/>AirPods <br/> <strong>Max</strong></p>
-                                <p>Computational audio. Listen, it's powerful</p>
+                                <p>Computational audio. Listen, it&apos;s powerful</p>
                             </div>
                         </div>
                         {/* 에어팟 끝 */}
