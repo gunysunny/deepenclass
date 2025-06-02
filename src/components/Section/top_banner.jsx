@@ -1,26 +1,35 @@
-import React from 'react';
-import './top_banner.css'; // 동일 폴더라 유지
+import React from 'react'
+import ShowNow from '../Assets/shownow_Btn'
 
-import bannerImage from '../../images/Iphone Image.png';
-import ShowNow from '../Assets/shownow_Btn.jsx';
+function Banner() {
+    const baseImg = process.env.PUBLIC_URL + '/images'
 
-const Banner = () => {
     return (
-        <section>
-            <div className='background'>
-                <div className='left_box'>
-                    <p className='opacity'>Pro.Beyond.</p>
-                    <h1 className='productName'>IPhone 14 <strong>Pro</strong></h1>
-                    <p className='latest'>Created to change everything for the better. For everyone</p>
+        <section className="bg-[#211C24] w-full h-[632px]">
+            <div className="flex justify-between items-center max-w-[1440px] mx-auto h-full">
+                {/* 왼쪽 박스 */}
+                <div className="text-white flex flex-col space-y-4">
+                    <p className="opacity-40 text-[25px] font-normal">Pro.Beyond.</p>
+                    <h1 className="font-thin text-[96px] tracking-[-1px]">
+                        IPhone 14 <strong>Pro</strong>
+                    </h1>
+                    <p className="text-[#909090] text-[18px]">
+                        Created to change everything for the better. For everyone
+                    </p>
                     <ShowNow />
-                    {/* 버튼전용 컴포넌트 */}
                 </div>
-                <div className='right_box'>
-                    <img src={bannerImage} alt="banner" className="top_banner" />
+
+                {/* 오른쪽 박스 */}
+                <div className="">
+                    <img
+                        src={`${baseImg}/Iphone Image.png`}
+                        alt="banner"
+                        className="w-auto h-[580px] object-contain"
+                    />
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default Banner;
