@@ -9,10 +9,10 @@ const baseImg = process.env.PUBLIC_URL + '/images'
 const FEATURES = [
     {
         id: 'ps5',
-        title: <>Playstation<br />5</>,
+        title: <>Playstation 5</>,
         desc: 'Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.',
         img: 'PlayStation.png',
-        wrapper: 'flex items-center text-4xl',
+        wrapper: 'flex items-center',
         imgWrapper: 'w-2/5',
         textWrapper: 'w-3/5 p-5 box-border text-gray-600 leading-6',
         titleClass: 'text-5xl font-normal text-black mb-4',
