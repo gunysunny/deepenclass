@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './header.css'
+
 
 
 
@@ -15,7 +15,7 @@ const ICONS = [
 const baseImg = process.env.PUBLIC_URL + '/images'
 
 
-export default function Header(){
+function Header(){
     return (
         <header className="flex max-w-[1440px] justify-between items-center px-8 py-4 mx-auto">
         {/* 1) 로고 영역을 작은 컴포넌트로 분리 */}
@@ -49,6 +49,7 @@ function LogoLink() {
         </div>
     )
 }
+export default Header;
 
 
 // SearchBar 컴포넌트
