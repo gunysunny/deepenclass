@@ -5,7 +5,7 @@ function Banner() {
     const baseImg = process.env.PUBLIC_URL + '/images'
 
     return (
-        <section className="bg-[#211C24] w-full h-[632px]">
+        <section className="bg-[#211C24] w-[1440px] h-[632px] mx-auto px-[160px]">
             <div className="flex justify-between items-center max-w-[1440px] mx-auto h-full">
                 {/* 왼쪽 박스 */}
                 <div className="text-white flex flex-col space-y-4">
@@ -20,11 +20,11 @@ function Banner() {
                 </div>
 
                 {/* 오른쪽 박스 */}
-                <div className="">
+                <div className="h-full">
                     <img
                         src={`${baseImg}/Iphone Image.png`}
                         alt="banner"
-                        className="w-auto h-[580px] object-contain"
+                        className="w-auto h-full object-contain"
                     />
                 </div>
             </div>
