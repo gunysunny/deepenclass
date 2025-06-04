@@ -1,11 +1,12 @@
 import React from 'react';
-import './common.css'; // 스타일 분리
+import '@/components/Assets/common.css'; // 스타일 분리
 
 
 
 const ShowNow = () => {
     return (
-            <button className='shownow'>Show Now</button>
+            <button className='shownow w-48 inline-block px-10 py-4 border border-solid border-white box-border rounded-md transition duration-500 
+            hover:bg-[#dddddd] hover:text-black hover:border-transparent'>Show Now</button>
     );
 };
 
