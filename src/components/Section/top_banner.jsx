@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowNow from '../Assets/shownow_Btn'
+import ShowNow from '@/components/Assets/shownow_Btn'
 
 function Banner() {
     const baseImg = process.env.PUBLIC_URL + '/images'
