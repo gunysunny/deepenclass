@@ -9,7 +9,7 @@ const Contents = () => {
     return (
         <middle>
             {/* 좌우 2등분 플렉스 */}
-            <div className='flex'>
+            <div className='flex_box'>
 
                 {/* 좌측 플스, 에어팟, 비전프로 컨트롤 */}
                 <div className='flex_left'>
