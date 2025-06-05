@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/Assets/common.css'; // 스타일 분리
+
 
 
 
