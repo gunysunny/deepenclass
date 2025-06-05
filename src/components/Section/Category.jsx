@@ -15,7 +15,7 @@ const categories = [
         iconType: 'svg',
     },
     {
-        id: 'Watch',
+        id: 'watch',
         label: 'Watch',
         imgSrc: '/images/Smart_Watches.svg',
         iconType: 'svg',
@@ -49,7 +49,7 @@ export default function Category() {
 
             <div className="flex space-x-4 overflow-x-auto justify-between">
                 {categories.map(({ id, label, imgSrc, icon, iconType }) => (
-                <div
+                <button
                     key={id}
                     className="
                     flex-shrink-0
@@ -59,19 +59,22 @@ export default function Category() {
                     flex flex-col items-center justify-center
                     text-center
                     shadow-sm
+                    transform transition-transform duration-200
+                    hover:-translate-y-2 hover:shadow-lg
+                    focus:outline-none
                     "
                 >
                     {iconType === 'svg' ? (
                     <img
                         src={imgSrc}
                         alt={label}
-                        className="w-8 h-8 mb-2 object-contain"
+                        className="w-12 h-12 mb-2 object-contain"
                     />
                     ) : (
                     <div className="mb-2">{icon}</div>
                     )}
                     <span className="text-xs text-gray-600">{label}</span>
-                </div>
+                </button>
                 ))}
             </div>
         </section>
