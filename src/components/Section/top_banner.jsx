@@ -8,7 +8,7 @@ function Banner() {
         <section className="bg-[#211C24] w-[1440px] h-[632px] mx-auto px-[160px]">
             <div className="flex justify-between items-center max-w-[1440px] mx-auto h-full">
                 {/* 왼쪽 박스 */}
-                <div className="text-white flex flex-col space-y-4">
+                <div className="text-white flex flex-col ">
                     <p className="opacity-40 text-[25px] font-normal">Pro.Beyond.</p>
                     <h1 className="font-thin text-[96px] tracking-[-1px]">
                         IPhone 14 <strong>Pro</strong>
