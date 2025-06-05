@@ -1,6 +1,6 @@
 // src/components/Contents/Contents.jsx
 import React from "react"
-import ShowNowbk from "@/components/Assets/shownow_Btnbk.jsx"
+import ShowNowbk from "@/components/Assets/Shownow_Btnbk.jsx"
 
 // public/images 폴더를 기준으로 한 이미지 베이스 경로를 env 대신 절대 경로로 지정
 // 이제 process.env.PUBLIC_URL을 쓰지 않고, “/images/파일명” 형태로 바로 접근합니다.
