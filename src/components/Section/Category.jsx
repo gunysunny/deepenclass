@@ -3,14 +3,14 @@ import { FiTag, FiCreditCard, FiTruck } from 'react-icons/fi'
 
 const categories = [
     {
-        id: 'electronics',
-        label: 'Electronics',
+        id: 'phone',
+        label: 'Phone',
         imgSrc: '/images/Phones.svg',
         iconType: 'svg',
     },
     {
-        id: 'furniture',
-        label: 'Furniture',
+        id: 'camera',
+        label: 'Camera',
         imgSrc: '/images/middle_camera.svg',
         iconType: 'svg',
     },
