@@ -42,7 +42,7 @@ const categories = [
 
 export default function Category() {
     return (
-        <section className="py-8 bg-white w-[1440px] mx-auto mt-20 px-40">
+        <section className="py-8 bg-white w-[1440px] mx-auto my-20 px-40">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Browse By Category
             </h2>
