@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ShowNow from '@/components/Assets/shownow_Btn'
+
 
 const ICONS = [
     { name: 'cart', file: 'top_right_menu2.png' },
