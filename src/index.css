@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .overscroll-contain {
+        overscroll-behavior: contain;
+        overscroll-behavior-x: contain;
+        overscroll-behavior-y: contain;
+    }
+}
+.category-scroll {
+    /* 수평 스크롤은 허용하되, 스크롤 체이닝(chain)만 막기 */
+    overscroll-behavior: contain;
+    /* Firefox용 */
+    overscroll-behavior-x: contain;
+    overscroll-behavior-y: contain;
+}
+
+/* 스크롤 기능은 유지하면서 스크롤바만 숨기기 */
+.hide-scrollbar {
+  /* Firefox, IE 10+ */
+  -ms-overflow-style: none;   /* IE, Edge */
+  scrollbar-width: none;      /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  /* Chrome, Safari, Opera */
+    display: none;
+    width: 0;                   /* 세로 스크롤바 너비 */
+    height: 0;                  /* 가로 스크롤바 높이 */
+}
