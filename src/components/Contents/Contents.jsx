@@ -29,7 +29,7 @@ const FEATURES = [
             </>
             ),
             desc: "Computational audio. Listen, it’s powerful",
-            img: "hero__gnfk5g59t0qe_xlarge_2x 1.png",
+            img: "hero__gnfk5g59t0qe_xlarge_2x_1.png",
             wrapper: "flex items-center justify-between bg-gray-200 box-border h-full",
             imgWrapper: "w-1/3",
             textWrapper: "w-2/3 p-4 box-border",
@@ -46,7 +46,7 @@ const FEATURES = [
             </>
             ),
             desc: "An immersive way to experience entertainment",
-            img: "image 36.png",
+            img: "image_36.png",
             wrapper: "flex items-center justify-between bg-[#353535] box-border h-full",
             imgWrapper: "w-1/3",
             textWrapper: "w-2/3 p-4 box-border text-white",
@@ -135,8 +135,8 @@ const FEATURES = [
                 {/* 이미지 영역 (전체 너비의 1/3) */}
                 <div className="w-1/3 box-border">
                     <img
-                        src={`/images/MacBook Pro 14.png`}
-                        alt="MacBook Air"
+                        src={`/images/MacBook_Pro_14.png`}
+                        alt="MacBook_Air"
                         className="h-auto w-full object-contain"
                     />
                 </div>

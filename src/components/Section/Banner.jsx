@@ -22,7 +22,7 @@ function Banner() {
                 {/* 오른쪽 박스 */}
                 <div className="h-full">
                     <img
-                        src={`${baseImg}/Iphone Image.png`}
+                        src={`${baseImg}/Iphone_Image.png`}
                         alt="banner"
                         className="w-auto h-full object-contain"
                     />
