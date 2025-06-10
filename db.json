@@ -1,0 +1,20 @@
+{
+    "categories": [
+        { "id": "phone",         "label": "Phone",     "imgSrc": "/images/Phones.svg",           "iconType": "svg" },
+        { "id": "camera",        "label": "Camera",    "imgSrc": "/images/middle_camera.svg",   "iconType": "svg" },
+        { "id": "watch",         "label": "Watch",     "imgSrc": "/images/Smart_Watches.svg",   "iconType": "svg" },
+        { "id": "discounts",     "label": "Discounts", "iconType": "react",                     "icon": "tag" },
+        { "id": "payments",      "label": "Payments",  "iconType": "react",                     "icon": "creditCard" },
+        { "id": "delivery",      "label": "Delivery",  "iconType": "react",                     "icon": "truck" },
+        { "id": "laptop",        "label": "Laptop",        "iconType": "react", "icon": "laptop"      },
+        { "id": "tablet",        "label": "Tablet",        "iconType": "react", "icon": "tablet"      },
+        { "id": "accessories",   "label": "Accessories",   "iconType": "react", "icon": "accessories" },
+        { "id": "gaming",        "label": "Gaming",        "iconType": "react", "icon": "gaming"      },
+        { "id": "headphones",    "label": "Headphones",    "iconType": "react", "icon": "headphones"  },
+        { "id": "speakers",      "label": "Speakers",      "iconType": "react", "icon": "speakers"    },
+        { "id": "tv",            "label": "TV",            "iconType": "react", "icon": "tv"          },
+        { "id": "console",       "label": "Console",       "iconType": "react", "icon": "console"     },
+        { "id": "wearables",     "label": "Wearables",     "iconType": "react", "icon": "wearables"   },
+        { "id": "drones",        "label": "Drones",        "iconType": "react", "icon": "drones"}
+    ]
+}
